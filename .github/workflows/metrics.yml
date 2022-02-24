@@ -13,7 +13,8 @@ jobs:
           filename: base.svg
           token: ${{ secrets.METRICS_TOKEN }}
           user: Drakota
-          template: classic
+          template: "@classic"
+          setup_community_templates: "Drakota/metrics@master:classic"
           base: repositories
           config_timezone: America/Montreal
           plugin_languages: yes
@@ -37,7 +38,8 @@ jobs:
           filename: side.svg
           token: ${{ secrets.METRICS_TOKEN }}
           user: Drakota
-          template: classic
+          template: "@classic"
+          setup_community_templates: "Drakota/metrics@master:classic"
           base: ""
           config_timezone: America/Montreal
           plugin_habits: yes
